@@ -12,7 +12,7 @@
 
 + (NSInteger)powerWith:(NSInteger)number
 {
-    return number * number * number;
+    return number * number;
 }
 
 @end
