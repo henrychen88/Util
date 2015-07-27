@@ -9,18 +9,7 @@
 /* Begin PBXBuildFile section */
 		BAD564CC1B620EB600A520BC /* Utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAD564CB1B620EB600A520BC /* Utils.h */; };
 		BAD564CE1B620EB600A520BC /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD564CD1B620EB600A520BC /* Utils.m */; };
-		BAD564D41B620EB600A520BC /* libUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD564C81B620EB600A520BC /* libUtils.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BAD564D51B620EB600A520BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAD564C01B620EB600A520BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAD564C71B620EB600A520BC;
-			remoteInfo = Utils;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BAD564C61B620EB600A520BC /* CopyFiles */ = {
@@ -39,8 +28,6 @@
 		BAD564C81B620EB600A520BC /* libUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD564CB1B620EB600A520BC /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		BAD564CD1B620EB600A520BC /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		BAD564D31B620EB600A520BC /* UtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAD564D91B620EB600A520BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,14 +38,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAD564D01B620EB600A520BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAD564D41B620EB600A520BC /* libUtils.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				BAD564CA1B620EB600A520BC /* Utils */,
-				BAD564D71B620EB600A520BC /* UtilsTests */,
 				BAD564C91B620EB600A520BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				BAD564C81B620EB600A520BC /* libUtils.a */,
-				BAD564D31B620EB600A520BC /* UtilsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,22 +64,6 @@
 				BAD564CD1B620EB600A520BC /* Utils.m */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		BAD564D71B620EB600A520BC /* UtilsTests */ = {
-			isa = PBXGroup;
-			children = (
-				BAD564D81B620EB600A520BC /* Supporting Files */,
-			);
-			path = UtilsTests;
-			sourceTree = "<group>";
-		};
-		BAD564D81B620EB600A520BC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				BAD564D91B620EB600A520BC /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,24 +86,6 @@
 			productReference = BAD564C81B620EB600A520BC /* libUtils.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		BAD564D21B620EB600A520BC /* UtilsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAD564DF1B620EB600A520BC /* Build configuration list for PBXNativeTarget "UtilsTests" */;
-			buildPhases = (
-				BAD564CF1B620EB600A520BC /* Sources */,
-				BAD564D01B620EB600A520BC /* Frameworks */,
-				BAD564D11B620EB600A520BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BAD564D61B620EB600A520BC /* PBXTargetDependency */,
-			);
-			name = UtilsTests;
-			productName = UtilsTests;
-			productReference = BAD564D31B620EB600A520BC /* UtilsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,9 +96,6 @@
 				ORGANIZATIONNAME = Henry;
 				TargetAttributes = {
 					BAD564C71B620EB600A520BC = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					BAD564D21B620EB600A520BC = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -173,20 +113,9 @@
 			projectRoot = "";
 			targets = (
 				BAD564C71B620EB600A520BC /* Utils */,
-				BAD564D21B620EB600A520BC /* UtilsTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		BAD564D11B620EB600A520BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAD564C41B620EB600A520BC /* Sources */ = {
@@ -197,22 +126,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAD564CF1B620EB600A520BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BAD564D61B620EB600A520BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAD564C71B620EB600A520BC /* Utils */;
-			targetProxy = BAD564D51B620EB600A520BC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BAD564DA1B620EB600A520BC /* Debug */ = {
@@ -311,38 +225,6 @@
 			};
 			name = Release;
 		};
-		BAD564E01B620EB600A520BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		BAD564E11B620EB600A520BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UtilsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -362,14 +244,7 @@
 				BAD564DE1B620EB600A520BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		BAD564DF1B620EB600A520BC /* Build configuration list for PBXNativeTarget "UtilsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAD564E01B620EB600A520BC /* Debug */,
-				BAD564E11B620EB600A520BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
